@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,21 +17,21 @@
 <!--Navigation-->
     <nav>
         <a href="#home">Home</a>  |
-        <a href="#about">About Us</a>  |
+        <a href="#about-event">About Us</a>  |
         <a href="#contact">Contact Us</a>
     </nav>
 
 <!--Section About Event-->
     <section id="about-event">
-            <h2>About Us</h2>
-            <p>Welcome to Mania Food Fest the ultimate playground for food lovers! 
-                We are a high-energy culinary celebration dedicated to bringing together 
-                the boldest flavors, the trendiest street eats, and the most passionate foodies under one roof. 
-                Born out of a pure obsession for great food and great vibes, Mania Food Fest is more than just a place to eat; it’s an experience. 
-                From mouth-watering local favorites to innovative fusion dishes, we curate the ultimate feast paired with live music, 
-                entertainment, and unforgettable memories. Come hungry, leave happy, and join the food mania!</p>
+        <h2>About Us</h2>
+        <p>Welcome to Mania Food Fest the ultimate playground for food lovers! 
+            We are a high-energy culinary celebration dedicated to bringing together 
+            the boldest flavors, the trendiest street eats, and the most passionate foodies under one roof. 
+            Born out of a pure obsession for great food and great vibes, Mania Food Fest is more than just a place to eat; it’s an experience. 
+            From mouth-watering local favorites to innovative fusion dishes, we curate the ultimate feast paired with live music, 
+            entertainment, and unforgettable memories. Come hungry, leave happy, and join the food mania!</p>
             
-    <!--Article 1-->
+        <!--Article 1-->
         <article>
             <h3>Activity 1 - Cooking Competition</h3>
             <p>Students must form a team of two and cook a creative dish within 45 minutes based on the secret theme revealed on event day. 
@@ -49,11 +50,13 @@
                 The organizers will provide a standard booth table, but you must bring any special equipment needed to keep your food hot or cold. 
                 Lastly, be ready to welcome the crowd and confidently explain the flavors and inspiration behind your food during the tasting session</p>
         </article>
-    </section><br><br>
+    </section>
+    <br><br>
 
 <!--Section Event Schedule-->
     <section id="event-schedule">
         <h2>Mania Food Fest Schedule</h2>
+
         <!--Table Head-->
         <table border="1">
             <thead>
@@ -64,6 +67,7 @@
                     <th>Person In Charge</th>
                 </tr>
             </thead>
+
             <!--Table Body-->
             <tbody>
                 <tr>
@@ -83,7 +87,6 @@
                     <td>Cooking Competiton</td>
                     <td rowspan="2">Dewan Sultan Mizan</td>
                     <td>Chef Danial</td>
-
                 </tr>
 
                 <tr>
@@ -92,27 +95,31 @@
                     <td>Mr. Luqman</td>
                 </tr>
             </tbody>
-        </table><br><br>
-
+        </table>
+        <br><br>
+    </section>
 
 <!--Section Registration-->
     <section id="registration">
         <h2>Register Now</h2>
+
         <form action="register.html" method="post">
+
             <!--Personal Info-->
             <fieldset>
                 <legend>Personal Information</legend>
+
                 <p>
                     <label for="fullname">Full Name: </label>
                     <input type="text" id="fullname" name="fullname" required>
                 </p>
 
-                 <p>
+                <p>
                     <label for="matricnum">Matric Number: </label>
                     <input type="text" id="matricnum" name="matricnum" required>
                 </p>
 
-                 <p>
+                <p>
                     <label for="email">Email: </label>
                     <input type="email" id="email" name="email" required>
                 </p>
@@ -121,24 +128,24 @@
             <!--Year of Study-->
             <fieldset>
                 <legend>Year of Study</legend>
-                    <input type="radio" id="year1" name="year" value="=Year 1">
-                    <label for="year1">Year 1</label><br>
 
-                    <input type="radio" id="year2" name="year" value="=Year 2">
-                    <label for="year2">Year 2</label><br>
+                <input type="radio" id="year1" name="year" value="Year 1">
+                <label for="year1">Year 1</label><br>
 
-                    <input type="radio" id="year3" name="year" value="=Year 3">
-                    <label for="year3">Year 3</label><br>
+                <input type="radio" id="year2" name="year" value="Year 2">
+                <label for="year2">Year 2</label><br>
 
-                    <input type="radio" id="year4" name="year" value="=Year 4">
-                    <label for="year4">Year 4</label><br>
-            
+                <input type="radio" id="year3" name="year" value="Year 3">
+                <label for="year3">Year 3</label><br>
+
+                <input type="radio" id="year4" name="year" value="Year 4">
+                <label for="year4">Year 4</label><br>
             </fieldset>
 
             <!--Activity Selection-->
             <fieldset>
                 <legend>Choose Your Activities</legend>
-                
+
                 <input type="checkbox" id="activity1" name="activities[]" value="Cooking Competition">
                 <label for="activity1">Cooking Competition</label>
 
@@ -171,9 +178,15 @@
             <p>
                 <input type="submit" value="Register Now">
             </p>
+
         </form>
-    </section> 
+    </section>
+
     <!--Footer-->
-    <footer>&copy; 2026 Faculty of Computer Science and Mathemathic, UMT. <br>All Rights Reserved.</footer>
-    </body>
+    <footer>
+        &copy; 2026 Faculty of Computer Science and Mathemathic, UMT.
+        <br>All Rights Reserved.
+    </footer>
+
+</body>
 </html>
