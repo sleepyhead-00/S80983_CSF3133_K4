@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mania Food Fest</title>
+</head>
+<body>
+
+<!--Header Section-->
+    <header>
+        <h1>Mania Food Fest</h1>
+        <p>Good food, Great Mood</p>
+    </header>
+
+<!--Navigation-->
+    <nav>
+        <a href="#home">Home</a>  |
+        <a href="#about">About Us</a>  |
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+<!--Section About Event-->
+    <section id="about-event">
+            <h2>About Us</h2>
+            <p>Welcome to Mania Food Fest the ultimate playground for food lovers! 
+                We are a high-energy culinary celebration dedicated to bringing together 
+                the boldest flavors, the trendiest street eats, and the most passionate foodies under one roof. 
+                Born out of a pure obsession for great food and great vibes, Mania Food Fest is more than just a place to eat; it’s an experience. 
+                From mouth-watering local favorites to innovative fusion dishes, we curate the ultimate feast paired with live music, 
+                entertainment, and unforgettable memories. Come hungry, leave happy, and join the food mania!</p>
+            
+    <!--Article 1-->
+        <article>
+            <h3>Activity 1 - Cooking Competition</h3>
+            <p>Students must form a team of two and cook a creative dish within 45 minutes based on the secret theme revealed on event day. 
+                On the day of the competition, you need to bring your own basic cooking utensils, such as knives, cutting boards, and frying pans, 
+                as well as your own specialty plates for food presentation. The organizers will provide the main ingredients, pantry staples, and a 
+                portable gas stove at your designated cooking station. You must arrive 30 minutes before the clock starts for a safety briefing, 
+                keep your workstation clean throughout the battle, and present your final plate to the judges before the timer hits zero.</p>
+        </article>
+
+        <!--Article 2-->
+        <article>
+            <h3>Activity 2 - Food Tasting Experience</h3>
+            <p>Students must prepare a signature dish in advance and bring enough portions for the judges and visitors to sample. On event day, 
+                your main role is to set up an attractive display table and handle the final plating or assembly of your dish. 
+                You need to prepare and bring all your own serving materials, including mini sample cups, toothpicks, spoons, and napkins. 
+                The organizers will provide a standard booth table, but you must bring any special equipment needed to keep your food hot or cold. 
+                Lastly, be ready to welcome the crowd and confidently explain the flavors and inspiration behind your food during the tasting session</p>
+        </article>
+    </section><br><br>
+
+<!--Section Event Schedule-->
+    <section id="event-schedule">
+        <h2>Mania Food Fest Schedule</h2>
+        <!--Table Head-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person In Charge</th>
+                </tr>
+            </thead>
+            <!--Table Body-->
+            <tbody>
+                <tr>
+                    <td>8.00 AM</td>
+                    <td>Participant Registration</td>
+                    <td>Dewan Sultan Mizan</td>
+                    <td>Group 1</td>
+                </tr>
+
+                <tr>
+                    <td>10.00 AM - 10.30 AM</td>
+                    <td colspan="3">Morning Break</td>
+                </tr>
+
+                <tr>
+                    <td>12.00 PM</td>
+                    <td>Cooking Competiton</td>
+                    <td rowspan="2">Dewan Sultan Mizan</td>
+                    <td>Chef Danial</td>
+
+                </tr>
+
+                <tr>
+                    <td>5.00 PM</td>
+                    <td>Food Tasting Experience</td>
+                    <td>Mr. Luqman</td>
+                </tr>
+            </tbody>
+        </table><br><br>
+
+
+<!--Section Registration-->
+    <section id="registration">
+        <h2>Register Now</h2>
+        <form action="register.html" method="post">
+            <!--Personal Info-->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                 <p>
+                    <label for="matricnum">Matric Number: </label>
+                    <input type="text" id="matricnum" name="matricnum" required>
+                </p>
+
+                 <p>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+            </fieldset>
+
+            <!--Year of Study-->
+            <fieldset>
+                <legend>Year of Study</legend>
+                    <input type="radio" id="year1" name="year" value="=Year 1">
+                    <label for="year1">Year 1</label><br>
+
+                    <input type="radio" id="year2" name="year" value="=Year 2">
+                    <label for="year2">Year 2</label><br>
+
+                    <input type="radio" id="year3" name="year" value="=Year 3">
+                    <label for="year3">Year 3</label><br>
+
+                    <input type="radio" id="year4" name="year" value="=Year 4">
+                    <label for="year4">Year 4</label><br>
+            
+            </fieldset>
+
+            <!--Activity Selection-->
+            <fieldset>
+                <legend>Choose Your Activities</legend>
+                
+                <input type="checkbox" id="activity1" name="activities[]" value="Cooking Competition">
+                <label for="activity1">Cooking Competition</label>
+
+                <input type="checkbox" id="activity2" name="activities[]" value="Food Stall Exploration">
+                <label for="activity2">Food Stall Exploration</label>
+
+                <input type="checkbox" id="activity3" name="activities[]" value="Food Testing Session">
+                <label for="activity3">Food Tasting Session</label>
+
+                <input type="checkbox" id="activity4" name="activities[]" value="Food Quiz Challenge">
+                <label for="activity4">Food Quiz Challenge</label>
+            </fieldset>
+
+            <!--Programme/Faculty-->
+            <fieldset>
+                <legend>Programme/Faculty</legend>
+
+                <label for="programme">Select your program: </label>
+                <select id="programme" name="programme" required>
+                    <option value="">--Select Programme--</option>
+                    <option value="FSKM">FSKM</option>
+                    <option value="FSPA">FSPA</option>
+                    <option value="FSSM">FSSM</option>
+                    <option value="FPEPS">FPEPS</option>
+                    <option value="FPA">FPA</option>
+                </select>
+            </fieldset>
+
+            <!--Button-->
+            <p>
+                <input type="submit" value="Register Now">
+            </p>
+        </form>
+    </section> 
+    <!--Footer-->
+    <footer>&copy; 2026 Faculty of Computer Science and Mathemathic, UMT. <br>All Rights Reserved.</footer>
+    </body>
+</html>
