@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bakery</title>
+</head>
+<body>
+    <!-- Header and Navigation -->
+     <div id="header">
+        <h1>Sweetie Bakery</h1>
+        <p>Freshly baked from oven to your heart</p>
+     </div>
+
+     <!-- Navigation -->
+      <div id="nav">
+        <a href="#header">Home</a> |
+        <a href="#content">Place Order</a> |
+        <a href="#sidebar">Price List</a> |
+        <a href="#footer">Contact</a>
+      </div>
+
+      <!-- Introduction -->
+       <div="content">
+        <h2>Welcome to Sweetie Bakery!</h2>
+        <p>
+            Welcome to <strong>Sweetie Bakery</strong> your <em>favourite</em> campus bakery. 
+            We prepare <u>fresh treats everyday</u>, using quality ingredients.
+            Choose your favourite flavour and customize your order just the way you like it
+        </p>
+
+        <h3>How to Order</h3>
+        <ol>
+            <li>Enter your contact details.</li>
+            <li>Choose your prefered pickup date and time.</li>
+            <li>Select your cake preferences and quantities.</li>
+            <li>Check the total price before submitting.</li>
+        </ol>
+
+        <!-- Form -->
+         <form action="#" method="get" oninput="total.value = 
+         ((Number(cupcakes.value) * 3) + (Number(slices.value) * 5)).toFixed(2)"">
+
+            <!-- Section 1 -->
+            <fieldset>
+                <legend>Customer Details</legend>
+                <p>
+                    <label for="customerName">Customer Name: </label>
+                    <input type="text" id="customerName" name="customerName"
+                    placeholder="Enter full name" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number: </label>
+                    <input type="number" id="phone" name="phone"
+                    placeholder="Enter phone number" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail: </label>
+                    <input type="text" id="email" name="email"
+                    placeholder="Enter your email" required>
+                </p>
+
+                <p>
+                    <label for="pickupDate">Pickup Date: </label>
+                    <input type="date" id="pickupDate" name="pickupDate" required>
+                </p>
+
+                <p>
+                    <label for="pickupTime">Pickup Time: </label>
+                    <input type="time" id="pickupTime" name="pickupTime" required>
+                </p>
+                
+            </fieldset><br>
+
+            <!-- Section 2 -->
+            <fieldset>
+                <legend>Cake Preference</legend>
+
+                <p>
+                    <label for="flavour">Choose a flavour: </label>
+                    <input list="flavours" id="flavour" name="flavour"
+                    placeholder="Select or type a flavour">
+
+                    <datalist id="flavours">
+                        <option value="Chocolate">
+                        <option value="Vanilla">
+                        <option value="Red Velvet">
+                        <option value="Blueberry">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="icing">Icing color: </label>
+                    <input type="color" id="icing" name="icing"
+                    value="#ff69b4">
+                </p>
+
+                <p>
+                    <label for="sweetness">Sweetness level (1 = low, 5 = high): </label>
+                    <input type="range" id="sweetness" name="sweetness"
+                    min="1" max="5" step="1" value="3">
+                </p>
+
+            </fieldset><br>
+
+            <!-- Section 3 -->
+            <fieldset>
+                <legend>Order Quantity and Total Price</legend>
+                
+                <p>
+                    <label for="cupcakes">Cupcakes (RM 3.00 each): </label>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+                </p>
+
+                <p>
+                    <label for="slices">Cake Slices (RM 5.00 each): </label>
+                    <input type="number" id="slices" name="slices" min="0" value="0">
+                </p>
+
+                <p>
+                    Total price: RM <output name="total" for="cupcakes slices">0.00</output>
+                </p>
+
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit Order</button>
+                <button type="submit">Reset Form</button>
+            </p>
+        </form>
+       </div>
+
+       <!-- Price List -->
+        <div id="sidebar">
+            <h2>Price List</h2>
+
+            <ul>
+                <li>Cupcake - RM 3.00 each</li>
+                <li>Slice Cake - RM 5.00 each</li>
+                <li>Muffin - RM 4.00 each</li>
+                <li>Brownies - RM 6.00 each</li>
+            </ul>
+
+            <p>Order &gt; 10 pieces get a free drink!</p>
+            <p>All price include applicable taxes</p>
+        </div>
+
+        <div id="footer">
+            <p>Contact us: sweetiebakery.umt@gmail.com</p>
+            <p>&copy; 2026 Sweetie Bakery. All rights reserved.</p>
+            <p>Made with love for our campus community</p>
+        </div>
+</body>
+</html>
