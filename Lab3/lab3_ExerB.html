@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+<!-- 
+Error 1 (Line 1): missing "html" in <!DOCTYPE html>.
+Error 2 (Line 9): wrong placement closing span tag.
+Error 3 (Line 13): missing ; in &amp; entity.
+Error 4 (Line 14): total calculation use addition without Number() conversion.
+Error 5 (Line 18): wrong input type emial, should be email.
+Error 6 (Line 22): datalist ID need to match the list attribute.
+Error 7 (Line 23): wrong datalist ID; should be movies.
+Error 8 (Line 32): range min and max values reversed
+Error 9 (Line 33): wrong output reference kid should be child.
+Error 10 (Line 38): wrong entity "&Copy;"; should be "&copy;".
+Error 11 (Lines 54-55): duplicate closing body and html tags.
+Error 12: added missing form method and input validation attributes.
+-->
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Main Content and Ticket Booking Form -->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <form action="booking.html" method="get"
+        oninput="total.value = Number(adult.value) + Number(child.value);
+        price.value = (Number(adult.value) * 12) + (Number(child.value) * 8)">
+
+            <!-- Customer Details Section -->
+            <fieldset>
+                <legend>Customer Details</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                placeholder="Enter your name" required autofocus><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <!-- New Phone Number Section -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number" required><br>
+            </fieldset>
+
+            <!-- Movie and Show Details Section -->
+            <fieldset>
+                <legend>Movie Details</legend>
+
+                <label for="date">Show date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="time">Show time:</label>
+                <input type="time" id="time" name="time" required><br>
+
+                <label for="movie">Movie:</label>
+                <input id="movie" name="movie" list="movies" required><br>
+
+                <!-- Movie Suggestions -->
+                <datalist id="movies">
+                    <option value="Space Rangers">
+                    <option value="Kampung Comedy">
+                </datalist>
+            </fieldset>
+
+            <!-- Ticket Quantity Section -->
+            <fieldset>
+                <legend>Ticket Quantity</legend>
+
+                <label for="adult">Adult tickets (RM12 each):</label>
+                <input type="number" id="adult" name="adult"
+                min="0" value="0"><br>
+
+                <label for="child">Child tickets (RM8 each):</label>
+                <input type="number" id="child" name="child"
+                min="0" value="0"><br>
+
+                <!-- Rating Section -->
+                <label for="rating">Rate our service:</label>
+                <input type="range" id="rating" name="rating"
+                min="1" max="5" value="3"><br>
+
+                <!-- Total Ticket Calculation -->
+                Total tickets:
+                <output name="total" for="adult child">0</output><br>
+
+                <!-- Total Price Calculation -->
+                Total price: RM
+                <output name="price" for="adult child">0</output><br>
+
+            </fieldset>
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset">
+
+        </form>
+    </div>
+
+    <!-- New Sidebar Section: Now Showing -->
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <strong>Space Rangers</strong>
+                <span>PG</span>
+                <a href="https://www.youtube.com/results?search_query=space+rangers+trailer">
+                    Watch Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>Kampung Comedy</strong>
+                <span>U</span>
+                <a href="https://www.youtube.com/results?search_query=kampung+comedy+trailer">
+                    Watch Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>Adventure World</strong>
+                <span>PG-13</span>
+                <a href="https://www.youtube.com/results?search_query=adventure+world+movie+trailer">
+                    Watch Trailer
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+        <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday</p>
+    </div>
+
+</body>
+</html>
