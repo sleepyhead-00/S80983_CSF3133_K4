@@ -1,0 +1,179 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #f4d7b5;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #654321;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Navigation Hover Effect */
+nav a:hover {
+    background-color: #d2691e;
+    color: white;
+}
+
+/* Link States */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: orange;
+}
+
+/* Section Styling */
+section {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #8b4513;
+    text-decoration: underline;
+}
+
+/* Menu Article Styling */
+article {
+    background-color: white;
+    border: 1px solid #deb887;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Old Promotion Price */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+/* Video Styling */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #654321;
+    margin-top: 10px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #f4d7b5;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.feedback-form label {
+    margin: 8px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Submit Button Styling */
+button {
+    background-color: #8b4513;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #654321;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #654321;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    nav li {
+        display: block;
+    }
+
+    .feedback-form {
+        width: 85%;
+    }
+
+    section {
+        width: 90%;
+    }
+
+}
