@@ -2,38 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!--
-    PART 1: LIST OF ERRORS AND CORRECTIONS
-
-    1. Missing HTML5 doctype declaration - Line 1.
-    2. Missing meta charset - Line 3.
-    3. Missing viewport meta tag - Line 4.
-    4. Missing page title - Line 5.
-    5. Navigation list has default bullet points - Line 13.
-    6. Menu link has incorrect or missing href - Line 14.
-    7. Heading has no overline decoration - Line 20.
-    8. Prices are not bold and red - Lines 26 and 32.
-    9. Link hover does not work properly for visited links - CSS.
-    10. Video source is missing or incorrect - Line 39.
-    11. Video source type is missing - Line 39.
-    12. Video has no controls attribute - Line 38.
-    13. Video is not responsive - CSS.
-    14. Footer has no address and email link - Line 52.
-
-    PART 2: NEW FEATURES
-    15. Added external CSS file cafe.css.
-    16. Added old promotional prices.
-    17. Added video caption using figure and figcaption.
-    18. Added feedback form.
-    19. Added Feedback navigation link.
-    20. Added HTML comments for each section.
-    -->
-
-    <!-- HTML5 Document Information -->
+    <!-- Character Encoding -->
     <meta charset="utf-8">
+
+    <!-- Responsive Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Page Title -->
     <title>e-Café Campus</title>
 
     <!-- External CSS -->
@@ -52,6 +27,30 @@
             font-weight: bold;
         }
     </style>
+
+    <!--
+    ERRORS AND CORRECTIONS:
+
+    1. Missing HTML5 doctype declaration.
+    2. Missing charset declaration or charset placed too late.
+    3. Missing viewport meta tag.
+    4. Missing page title.
+    5. Navigation menu has default bullet points.
+    6. Menu link has incorrect or missing href.
+    7. Heading has no overline decoration.
+    8. Prices are not bold and red.
+    9. Hover effect does not work properly with visited links.
+    10. Video source is missing or incorrect.
+    11. Video source type is missing.
+    12. Video has no controls attribute.
+    13. Video is not responsive.
+    14. Footer has no address and email link.
+    15. Added external CSS file.
+    16. Added old promotional prices.
+    17. Added video caption.
+    18. Added customer feedback form.
+    19. Added Feedback navigation link.
+    -->
 
 </head>
 
@@ -83,6 +82,7 @@
         <!-- Menu Item 1 -->
         <article>
             <h3>Kopi Tarik</h3>
+
             <p>Enjoy our delicious and freshly brewed local coffee.</p>
 
             <p class="price">
@@ -94,6 +94,7 @@
         <!-- Menu Item 2 -->
         <article>
             <h3>Nasi Lemak</h3>
+
             <p>Traditional nasi lemak served with sambal, egg and peanuts.</p>
 
             <p class="price">
@@ -111,7 +112,7 @@
 
         <figure>
             <video controls width="640">
-                <source src="cafe.mp4" type="video/mp4">
+                <source src="./cafe.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
@@ -131,38 +132,46 @@
 
             <!-- Customer Information -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"
-                   placeholder="Enter your name" required>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
 
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email"
-                   placeholder="Enter your email" required>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
 
             <!-- Visit Type -->
             <p>Visit Type:</p>
 
-            <input type="radio" id="dinein" name="visit"
-                   value="Dine-in">
+            <input type="radio" id="dinein" name="visit" value="Dine-in">
             <label for="dinein">Dine-in</label>
 
-            <input type="radio" id="takeaway" name="visit"
-                   value="Take-away">
+            <input type="radio" id="takeaway" name="visit" value="Take-away">
             <label for="takeaway">Take-away</label>
 
             <!-- Favourite Items -->
             <p>Favourite Items:</p>
 
-            <input type="checkbox" id="kopi" name="favourite"
-                   value="Kopi Tarik">
-            <label for="kopi">Kopi Tarik</label><br>
+            <input type="checkbox" id="kopi" name="favourite" value="Kopi Tarik">
+            <label for="kopi">Kopi Tarik</label>
+            <br>
 
-            <input type="checkbox" id="nasi" name="favourite"
-                   value="Nasi Lemak">
-            <label for="nasi">Nasi Lemak</label><br>
+            <input type="checkbox" id="nasi" name="favourite" value="Nasi Lemak">
+            <label for="nasi">Nasi Lemak</label>
+            <br>
 
-            <input type="checkbox" id="tea" name="favourite"
-                   value="Teh Tarik">
-            <label for="tea">Teh Tarik</label><br>
+            <input type="checkbox" id="tea" name="favourite" value="Teh Tarik">
+            <label for="tea">Teh Tarik</label>
+            <br>
 
             <!-- Submit Button -->
             <button type="submit">Submit Feedback</button>
