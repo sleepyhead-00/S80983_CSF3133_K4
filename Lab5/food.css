@@ -107,7 +107,7 @@ section p {
 /* Table Heading */
 #foodTable th {
     background-color: #E67E22;
-    color: #FDEBD0;
+    color: white;
     text-transform: uppercase;
     text-align: center;
 }
@@ -115,6 +115,10 @@ section p {
 /* Alternating Row Colours */
 #foodTable tr:nth-child(even) {
     background-color: #F2F2F2;
+}
+
+#foodTable tr:nth-child(odd) {
+    background-color: #f5f2e9;
 }
 
 /* Table Hover Effect */
