@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: url("paper.gif");
     background-repeat: no-repeat;
     background-position: right top;
     color: #333;
@@ -18,7 +17,8 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    background-image: url("books.jpg")
 }
 
 header h1 {
