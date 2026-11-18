@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bookstore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    <!-- Error Corrections:
+    Error 1 (shop.html, Line 7): Changed rel="stylesheets" to rel="stylesheet".
+    Error 2 (shop.html, Line 18): Corrected color=#1B4F72 to color:#1B4F72.
+    Error 3 (shop.html, Line 20): Changed table id="product" to id="products".
+    Error 4 (shop.html, Lines 22-25): Corrected missing opening table row tags.
+    Error 5 (shop.css, Line 2): Corrected Robotto to Roboto.
+    Error 6 (shop.css, Line 4): Corrected no repeat to no-repeat.
+    Error 7 (shop.css, Line 18): Changed display:inline to display:block.
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #1B4F72;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Hover Effect */
+nav a:hover {
+    background-color: #111;
+}
+
+/* Active Page */
+nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #1B4F72;
+}
+
+/* Product Table */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#products th,
+#products td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Table Heading */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+}
+
+/* Alternating Row Colours */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table Hover Effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    nav a {
+        text-align: left;
+    }
+
+    #products th,
+    #products td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+    Error 8 (shop.css, Line 27): Changed border-collapse:collapsed to collapse.
+    Error 9 (shop.css, Line 34): Changed nth-child(2) to nth-child(even).
+    Error 10 (shop.css, Line 37): Corrected table hover selector.
+    -->
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#products">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="about">
+            <h2>Welcome to Campus Bookstore</h2>
+            <p>Textbooks, stationery and more for every student.</p>
+        </section>
+
+        <!-- Product Table -->
+        <section id="products">
+            <h2>Our Products</h2>
+
+            <table id="products">
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td>45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td>6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td>20.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td>9.90</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
+
+</body>
+</html>
