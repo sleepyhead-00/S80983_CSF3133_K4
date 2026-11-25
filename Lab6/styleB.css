@@ -1,0 +1,95 @@
+
+/* Style the whole webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main content container */
+.container {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+/* Heading style */
+h2 {
+    color: #24476b;
+    text-align: center;
+}
+
+/* Label style */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input field style */
+input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+/* Button style */
+button {
+    background-color: #2878b5;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #174b75;
+}
+
+/* Result text */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Date and time text */
+#dateTime {
+    color: #555555;
+    font-size: 13px;
+}
+
+/* Grade table style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table borders and padding */
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table header background */
+th {
+    background-color: #24476b;
+    color: white;
+}
+
+/* Table row background */
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
