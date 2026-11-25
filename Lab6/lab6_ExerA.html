@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Link to JavaScript File -->
-     <script src="game.js" defer></script>
+    <script src="game.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,9 @@
     </header>
 
     <!-- Player Section -->
-     <section>
+    <section>
+        <h2>Player Information</h2>
+
         <label>Your name: </label>
         <input type="text" id="playerName">
 
@@ -29,32 +32,36 @@
 
         <p id="welcome"></p>
         <p id="startTime"></p>
-     </section>
+    </section>
 
-     <!-- Game Section -->
-      <section>
-        <button onclick="playRound('rock')">Rock</button>
-        <button onclick="playRound('paper')">Paper</button>
-        <button onclick="playRound('scissors')">Scissors</button>
+    <!-- Game Section -->
+    <section>
+        <h2>Game</h2>
+
+        <center>
+            <button onclick="playRound('rock')">Rock</button>
+            <button onclick="playRound('paper')">Paper</button>
+            <button onclick="playRound('scissors')">Scissors</button>
+        </center>
 
         <div class="game">
             <div>
                 <h3>You</h3>
-                <img id="playerImage" src="rock.jpg">
+                <img id="playerImage" src="rock.jpg" alt="Player choice">
             </div>
 
             <h2>VS</h2>
 
             <div>
                 <h3>Computer</h3>
-                <img id="computerImage" src="rock.jpg">
+                <img id="computerImage" src="rock.jpg" alt="Computer choice">
             </div>
         </div>
 
-      </section>
+    </section>
 
-      <!-- Result Section -->
-      <section>
+    <!-- Result Section -->
+    <section>
         <h2 id="result">Make your choice!</h2>
 
         <p>
@@ -62,10 +69,10 @@
             Losses: <span id="losses">0</span>
             Draw: <span id="draws">0</span>
         </p>
-      </section>
+    </section>
 
-      <!-- History Section -->
-       <section>
+    <!-- History Section -->
+    <section>
         <h2>History</h2>
 
         <table id="history">
@@ -77,18 +84,21 @@
             </tr>
         </table>
 
-       </section>
+    </section>
 
-       <!-- Summary and Reset -->
-        <section>
-            <button onclick="showSummary()">Show Summary</button>
-            <button onclick="resetGame()">Reset</button>
-            <p id="summary"></p>
-        </section>
+    <!-- Summary and Reset -->
+    <section>
+        <h2>Summary and Reset</h2>
 
-        <!-- Footer -->
-         <footer>
-            <p>&copy; 2026 Computer Science Club</p>
-         </footer>
+        <button onclick="showSummary()">Show Summary</button>
+        <button onclick="resetGame()">Reset</button>
+        <p id="summary"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Computer Science Club</p>
+    </footer>
+
 </body>
 </html>

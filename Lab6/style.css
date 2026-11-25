@@ -7,7 +7,7 @@ body {
 
 /* Game Header */
 header {
-    background-color: #174c6e
+    background-color: #174c6e;
     color: white;
     padding: 15px;
     border-radius: 5px;
@@ -60,7 +60,7 @@ table {
 /* Table Border */
 th, td {
     border: 1px solid black;
-    padding; 10px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -73,6 +73,6 @@ th {
 /* Footer */
 footer {
     text-align: center;
-    font-size; 12px;
+    font-size: 12px;
     margin-top: 20px;
 }
